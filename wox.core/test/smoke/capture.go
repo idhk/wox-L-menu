@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	"wox/test/automationdriver"
 )
@@ -34,9 +35,40 @@ func Capture(t *testing.T, ctx context.Context, client *automationdriver.Client,
 	if err := os.MkdirAll(absoluteDirectory, 0o755); err != nil {
 		t.Fatalf("create smoke capture directory: %v", err)
 	}
+	waitForPresentedFrame(t, ctx, client)
 	path := filepath.Join(absoluteDirectory, name+".png")
 	if err := client.Capture(ctx, path); err != nil {
 		t.Fatalf("capture %s: %v", name, err)
 	}
 	return path
+}
+
+// waitForPresentedFrame invalidates the surface and waits until a new frame reaches the compositor.
+// Capturing right after the window appears otherwise races the first paint and stores blank pixels,
+// because the semantics snapshot settles before the native surface has presented anything.
+func waitForPresentedFrame(t *testing.T, ctx context.Context, client *automationdriver.Client) {
+	t.Helper()
+	before, err := client.FrameMetrics(ctx)
+	if err != nil {
+		t.Fatalf("read frame metrics before capture: %v", err)
+	}
+	if err := client.RequestFrame(ctx); err != nil {
+		t.Fatalf("request capture frame: %v", err)
+	}
+	ticker := time.NewTicker(25 * time.Millisecond)
+	defer ticker.Stop()
+	for {
+		metrics, err := client.FrameMetrics(ctx)
+		if err != nil {
+			t.Fatalf("read frame metrics while waiting for capture frame: %v", err)
+		}
+		if metrics.PresentedFrameCount > before.PresentedFrameCount {
+			return
+		}
+		select {
+		case <-ctx.Done():
+			t.Fatalf("wait for presented capture frame: %v", ctx.Err())
+		case <-ticker.C:
+		}
+	}
 }
