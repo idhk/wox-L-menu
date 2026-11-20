@@ -1,0 +1,232 @@
+{
+  "Id": "51c9ebc8-c131-4493-a755-1f1d07a4ed91",
+  "Name": "i18n:plugin_name",
+  "Description": "i18n:plugin_description",
+  "Author": "Wox-Launcher",
+  "Website": "https://github.com/Wox-launcher/Wox",
+  "Version": "1.1.1",
+  "MinWoxVersion": "2.0.4",
+  "Runtime": "NODEJS",
+  "Entry": "dist/index.js",
+  "Icon": "emoji:🟪",
+  "TriggerKeywords": [
+    "*"
+  ],
+  "SupportedOS": [
+    "Windows",
+    "Linux",
+    "Darwin"
+  ],
+  "SettingDefinitions": [
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "baseUrl",
+        "Label": "i18n:base_url",
+        "DefaultValue": "",
+        "Tooltip": "i18n:base_url_tooltip",
+        "MaxLines": 1,
+        "Validators": [
+          {
+            "Type": "not_empty",
+            "Value": {}
+          }
+        ],
+        "Style": {
+          "Width": 480
+        }
+      },
+      "IsPlatformSpecific": false
+    },
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "apiToken",
+        "Label": "i18n:api_token",
+        "DefaultValue": "",
+        "Tooltip": "i18n:api_token_tooltip",
+        "MaxLines": 1,
+        "Validators": [
+          {
+            "Type": "not_empty",
+            "Value": {}
+          }
+        ],
+        "Style": {
+          "Width": 480
+        }
+      },
+      "IsPlatformSpecific": false
+    },
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "tables",
+        "Label": "i18n:tables",
+        "DefaultValue": "[]",
+        "Tooltip": "i18n:tables_tooltip",
+        "MaxLines": 12,
+        "Validators": [
+          {
+            "Type": "not_empty",
+            "Value": {}
+          }
+        ],
+        "Style": {
+          "Width": 640
+        }
+      },
+      "IsPlatformSpecific": false
+    },
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "resultLimit",
+        "Label": "i18n:result_limit",
+        "DefaultValue": "20",
+        "Validators": [
+          {
+            "Type": "is_number",
+            "Value": {
+              "IsInteger": true,
+              "IsFloat": false
+            }
+          }
+        ],
+        "Style": {
+          "Width": 120
+        }
+      },
+      "IsPlatformSpecific": false
+    },
+    {
+      "Type": "textbox",
+      "Value": {
+        "Key": "resultScore",
+        "Label": "i18n:result_score",
+        "DefaultValue": "1000",
+        "Tooltip": "i18n:result_score_tooltip",
+        "MaxLines": 1,
+        "Validators": [
+          {
+            "Type": "is_number",
+            "Value": {
+              "IsInteger": true,
+              "IsFloat": false
+            }
+          }
+        ],
+        "Style": {
+          "Width": 120
+        }
+      },
+      "IsPlatformSpecific": false
+    }
+  ],
+  "QueryRequirements": {
+    "AnyQuery": [
+      {
+        "SettingKey": "baseUrl",
+        "Message": "i18n:base_url_required"
+      },
+      {
+        "SettingKey": "apiToken",
+        "Message": "i18n:api_token_required"
+      },
+      {
+        "SettingKey": "tables",
+        "Message": "i18n:tables_required"
+      }
+    ]
+  },
+  "I18n": {
+    "en_US": {
+      "plugin_name": "NocoDB Search",
+      "plugin_description": "Search records across your internal NocoDB tables",
+      "base_url": "NocoDB URL",
+      "base_url_tooltip": "Your NocoDB origin, for example https://noco.example.com",
+      "api_token": "API token",
+      "api_token_tooltip": "A NocoDB API token sent only to the configured server",
+      "tables": "Search tables (JSON)",
+      "tables_tooltip": "Array of {id, name, titleField, searchFields}; optional color and urlTemplate fields are supported",
+      "result_limit": "Maximum results",
+      "result_score": "Global result priority",
+      "result_score_tooltip": "Score assigned to NocoDB records in global Wox search; higher values appear first",
+      "base_url_required": "Configure the NocoDB server URL first",
+      "api_token_required": "Configure a NocoDB API token first",
+      "tables_required": "Configure at least one NocoDB table first",
+      "copy_record": "Copy record as JSON",
+      "copied": "NocoDB record copied",
+      "table": "Table",
+      "record": "Record",
+      "invalid_config": "NocoDB table configuration is invalid",
+      "request_failed": "NocoDB search failed"
+    },
+    "zh_CN": {
+      "plugin_name": "NocoDB 搜索",
+      "plugin_description": "跨内部 NocoDB 数据表搜索记录",
+      "base_url": "NocoDB 地址",
+      "base_url_tooltip": "NocoDB 服务地址，例如 https://noco.example.com",
+      "api_token": "API 令牌",
+      "api_token_tooltip": "令牌只会发送至所配置的 NocoDB 服务",
+      "tables": "搜索数据表（JSON）",
+      "tables_tooltip": "填写 {id, name, titleField, searchFields} 数组；可选 color 和 urlTemplate",
+      "result_limit": "最大结果数",
+      "result_score": "全局结果优先级",
+      "result_score_tooltip": "NocoDB 记录在 Wox 全局搜索中的分数；数值越高，显示越靠前",
+      "base_url_required": "请先配置 NocoDB 服务地址",
+      "api_token_required": "请先配置 NocoDB API 令牌",
+      "tables_required": "请先配置至少一个 NocoDB 数据表",
+      "copy_record": "复制记录 JSON",
+      "copied": "已复制 NocoDB 记录",
+      "table": "数据表",
+      "record": "记录",
+      "invalid_config": "NocoDB 数据表配置无效",
+      "request_failed": "NocoDB 搜索失败"
+    },
+    "ru_RU": {
+      "plugin_name": "Поиск NocoDB",
+      "plugin_description": "Поиск записей во внутренних таблицах NocoDB",
+      "base_url": "Адрес NocoDB",
+      "base_url_tooltip": "Адрес сервера NocoDB, например https://noco.example.com",
+      "api_token": "API-токен",
+      "api_token_tooltip": "Токен отправляется только настроенному серверу NocoDB",
+      "tables": "Таблицы поиска (JSON)",
+      "tables_tooltip": "Массив {id, name, titleField, searchFields}; также доступны color и urlTemplate",
+      "result_limit": "Максимум результатов",
+      "result_score": "Приоритет глобальных результатов",
+      "result_score_tooltip": "Оценка записей NocoDB в глобальном поиске Wox; чем выше значение, тем раньше результат",
+      "base_url_required": "Сначала настройте адрес сервера NocoDB",
+      "api_token_required": "Сначала настройте API-токен NocoDB",
+      "tables_required": "Сначала настройте хотя бы одну таблицу NocoDB",
+      "copy_record": "Копировать запись как JSON",
+      "copied": "Запись NocoDB скопирована",
+      "table": "Таблица",
+      "record": "Запись",
+      "invalid_config": "Неверная конфигурация таблиц NocoDB",
+      "request_failed": "Ошибка поиска NocoDB"
+    },
+    "pt_BR": {
+      "plugin_name": "Pesquisa NocoDB",
+      "plugin_description": "Pesquise registros nas tabelas internas do NocoDB",
+      "base_url": "URL do NocoDB",
+      "base_url_tooltip": "Endereço do servidor NocoDB, por exemplo https://noco.example.com",
+      "api_token": "Token da API",
+      "api_token_tooltip": "O token é enviado somente ao servidor NocoDB configurado",
+      "tables": "Tabelas de pesquisa (JSON)",
+      "tables_tooltip": "Lista de {id, name, titleField, searchFields}; color e urlTemplate são opcionais",
+      "result_limit": "Máximo de resultados",
+      "result_score": "Prioridade nos resultados globais",
+      "result_score_tooltip": "Pontuação dos registros NocoDB na pesquisa global do Wox; valores maiores aparecem primeiro",
+      "base_url_required": "Configure primeiro a URL do servidor NocoDB",
+      "api_token_required": "Configure primeiro um token da API NocoDB",
+      "tables_required": "Configure primeiro pelo menos uma tabela NocoDB",
+      "copy_record": "Copiar registro como JSON",
+      "copied": "Registro NocoDB copiado",
+      "table": "Tabela",
+      "record": "Registro",
+      "invalid_config": "A configuração das tabelas NocoDB é inválida",
+      "request_failed": "A pesquisa no NocoDB falhou"
+    }
+  }
+}
