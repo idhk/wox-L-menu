@@ -3,7 +3,7 @@
     "Id": "47b92e1d-fe3a-455f-a70f-c231a3e4c43e",
     "Name": "Obsidian",
     "Author": "qianlifeng",
-    "Version": "0.0.5",
+    "Version": "0.0.6",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "Wox plugin to manage obsidian vault notes",
@@ -19,7 +19,7 @@
       "Linux"
     ],
     "DateCreated": "2023-08-29 00:00:00",
-    "DateUpdated": "2025-12-28 20:41:19"
+    "DateUpdated": "2026-11-28 11:13:46"
   },
   {
     "Id": "bf145a9f-4976-4486-a671-d44eb64c7cd0",
@@ -131,7 +131,7 @@
     "Id": "aeb94d3d-9c39-4917-9cd0-a4cde95433a2",
     "Name": "Spotify",
     "Author": "Wox-launcher",
-    "Version": "0.0.2",
+    "Version": "0.0.3",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "Spotify integration",
@@ -147,7 +147,7 @@
       "Linux"
     ],
     "DateCreated": "2024-07-05 15:00:00",
-    "DateUpdated": "2026-05-14 06:58:15"
+    "DateUpdated": "2026-11-28 11:13:49"
   },
   {
     "Id": "9575a1fc-d81b-4947-bcce-bd075f118f3e",
@@ -241,7 +241,7 @@
     "Id": "36fa2371-144c-4f53-98bb-874f77b21849",
     "Name": "Mole",
     "Author": "qianlifeng",
-    "Version": "0.0.2",
+    "Version": "1.0.0",
     "MinWoxVersion": "2.0.0",
     "Runtime": "python",
     "Description": "Dig deep like a mole to optimize you Mac",
@@ -255,7 +255,7 @@
       "Darwin"
     ],
     "DateCreated": "2025-11-26 22:15:00",
-    "DateUpdated": "2026-04-27 06:50:15"
+    "DateUpdated": "2026-11-28 11:13:51"
   },
   {
     "Id": "d4cf7d41-5cc2-4c21-8ee6-fbd6ca950c6a",
@@ -365,7 +365,7 @@
     "Id": "cb491ba6-e73f-4434-922e-738a55f87558",
     "Name": "i18n:plugin_name",
     "Author": "Wox-launcher",
-    "Version": "0.0.3",
+    "Version": "0.0.4",
     "MinWoxVersion": "2.0.0",
     "Runtime": "python",
     "Description": "i18n:plugin_description",
@@ -381,7 +381,7 @@
       "linux"
     ],
     "DateCreated": "2025-12-27 19:55:00",
-    "DateUpdated": "2026-07-15 09:36:00",
+    "DateUpdated": "2026-11-28 11:13:53",
     "I18n": {
       "en_US": {
         "plugin_name": "Kill Process",
@@ -397,7 +397,7 @@
     "Id": "407fdbba-bdab-4bc1-aa09-b46e811155a6",
     "Name": "LocalSend",
     "Author": "qianlifeng",
-    "Version": "0.0.1",
+    "Version": "0.1.4",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "i18n:plugin_description",
@@ -413,7 +413,7 @@
       "linux"
     ],
     "DateCreated": "2026-01-02 22:40:00",
-    "DateUpdated": "2026-01-02 22:40:00",
+    "DateUpdated": "2026-11-28 11:13:54",
     "I18n": {
       "en_US": {
         "plugin_description": "Share files via LocalSend protocol"
@@ -512,7 +512,7 @@
     "Id": "8f8d2954-4ef6-4b0f-ba53-a816fe095acc",
     "Name": "Iconify",
     "Author": "Wox-launcher",
-    "Version": "0.0.2",
+    "Version": "0.1.1",
     "MinWoxVersion": "2.0.0",
     "Runtime": "python",
     "Description": "i18n:plugin_description",
@@ -528,7 +528,7 @@
       "Linux"
     ],
     "DateCreated": "2026-03-08 15:56:00",
-    "DateUpdated": "2026-03-08 15:56:00",
+    "DateUpdated": "2026-11-28 11:13:56",
     "I18n": {
       "en_US": {
         "plugin_description": "Search Iconify icons - Home of open source icon sets"
@@ -542,7 +542,7 @@
     "Id": "2f326a0c-cd9f-4ddf-9b45-f8abf082283f",
     "Name": "i18n:plugin_name",
     "Author": "Wox-launcher",
-    "Version": "0.2.3",
+    "Version": "0.7.0",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "i18n:plugin_desc",
@@ -558,7 +558,7 @@
       "Linux"
     ],
     "DateCreated": "2026-03-08 15:56:00",
-    "DateUpdated": "2026-06-09 15:59:48",
+    "DateUpdated": "2026-11-28 11:13:56",
     "I18n": {
       "en_US": {
         "plugin_name": "Codex Usage",
@@ -606,7 +606,7 @@
     "Id": "6dd42f91-009d-4d14-909c-97f25454eea7",
     "Name": "i18n:plugin_name",
     "Author": "qianlifeng",
-    "Version": "0.0.4",
+    "Version": "0.1.0",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "i18n:plugin_description",
@@ -622,7 +622,7 @@
       "Linux"
     ],
     "DateCreated": "2026-03-18 11:14:02",
-    "DateUpdated": "2026-03-19 12:09:13",
+    "DateUpdated": "2026-11-28 11:13:57",
     "I18n": {
       "en_US": {
         "plugin_name": "Awake",
@@ -680,7 +680,7 @@
     "Id": "6987b7b1-89da-41ef-bab3-d1ba2e3daba0",
     "Name": "Everything",
     "Author": "qianlifeng",
-    "Version": "0.1.2",
+    "Version": "0.1.4",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "Search files with Everything on Windows",
@@ -694,13 +694,13 @@
       "Windows"
     ],
     "DateCreated": "2026-04-22 20:40:30",
-    "DateUpdated": "2026-08-11 09:19:31"
+    "DateUpdated": "2026-11-28 11:13:58"
   },
   {
     "Id": "0057ebd4-1a85-4653-8bfa-d51557c0c7a1",
     "Name": "i18n:plugin_name",
     "Author": "qianlifeng",
-    "Version": "0.0.1",
+    "Version": "0.0.2",
     "MinWoxVersion": "2.0.0",
     "Runtime": "python",
     "Description": "i18n:plugin_description",
@@ -716,7 +716,7 @@
       "Linux"
     ],
     "DateCreated": "2026-04-26 15:15:06",
-    "DateUpdated": "2026-04-26 15:17:37",
+    "DateUpdated": "2026-11-28 11:13:59",
     "I18n": {
       "en_US": {
         "plugin_name": "Unsplash",
@@ -732,7 +732,7 @@
     "Id": "263fa95c-db99-4dc8-be68-784b5ae421f8",
     "Name": "i18n:plugin_name",
     "Author": "stmluyuer",
-    "Version": "0.1.0",
+    "Version": "0.1.8",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "i18n:plugin_description",
@@ -752,7 +752,7 @@
       "Linux"
     ],
     "DateCreated": "2026-04-28 13:05:57",
-    "DateUpdated": "2026-04-28 13:05:57",
+    "DateUpdated": "2026-11-28 11:13:59",
     "I18n": {
       "en_US": {
         "plugin_name": "LuxTranslate",
@@ -800,7 +800,7 @@
     "Id": "ea521bb8-4414-44be-bf42-4b2851ae32ad",
     "Name": "i18n:plugin_name",
     "Author": "qianlifeng",
-    "Version": "0.0.1",
+    "Version": "0.1.0",
     "MinWoxVersion": "2.0.0",
     "Runtime": "nodejs",
     "Description": "i18n:plugin_description",
@@ -816,7 +816,7 @@
       "Linux"
     ],
     "DateCreated": "2026-05-06 19:48:30",
-    "DateUpdated": "2026-05-06 19:48:30",
+    "DateUpdated": "2026-11-28 11:14:00",
     "I18n": {
       "en_US": {
         "plugin_name": "RImage",
@@ -936,7 +936,7 @@
     "Id": "d30c9661-fa55-4ea6-b6f1-bc61e7aa8586",
     "Name": "need",
     "Author": "zed",
-    "Version": "0.2.0",
+    "Version": "0.2.1",
     "MinWoxVersion": "2.0.4",
     "Runtime": "nodejs",
     "Description": "Store and quickly retrieve local key-value notes",
@@ -953,7 +953,7 @@
       "Linux"
     ],
     "DateCreated": "2026-08-28 21:27:52",
-    "DateUpdated": "2026-08-29 10:51:00"
+    "DateUpdated": "2026-11-28 11:14:02"
   },
   {
     "Id": "5e693e9d-4683-4982-8929-d4ea5e364c5b",
